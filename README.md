@@ -1,4 +1,4 @@
-# Udacity-deeplearning-projects
+# Deeplearning-projects
 
 In this repository, you can overview different projects of udacity nanodegree program in deep learning. <br/>
 The projects covered are fake face generation using GANs ( generative adversial networks ).<br/>
