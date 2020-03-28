@@ -1,6 +1,6 @@
 # Deeplearning-projects
 
-In this repository, you can overview different projects of udacity nanodegree program in deep learning. <br/>
+In this repository, you can overview different projects using state of the art deep learning algorithms. <br/>
 The projects covered are as follows : <br/>
 1.[Dog breed classifier using convolutional neural networks (CNN )](./project-dog-classification)<br/>
 2.[Fake face generation using generative adversial networks (GAN)](./project-face-generation)<br/>
