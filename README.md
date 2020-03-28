@@ -49,8 +49,8 @@ conda install git
 
 1. Clone the repository, and navigate to the subfolder of the different projects .This may take a minute or two to clone due to the included image data.
 ```
-git clone https://github.com/hkishn/udacity-deeplearning-projects
-cd udacity-deeplearning-projects
+git clone https://github.com/hkishn/deeplearning-projects
+cd deeplearning-projects
 
 ```
 
