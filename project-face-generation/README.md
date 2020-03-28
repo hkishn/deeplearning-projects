@@ -9,10 +9,7 @@ This dataset is more complex than the number datasets (like MNIST ) and so, we s
 
 ## Pre-processed Data
 Each of the CelebA images has been cropped to remove parts of the image that don't include a face, then resized down to 64x64x3 NumPy images. Some sample data is show below.
-<img src='assets/processed_face_data.png' width=60% />
-If you are working locally, you can download this data by clicking here
-This is a zip file that you'll need to extract in the home directory of this notebook for further loading and processing. After extracting the data, you should be left with a directory of data processed_celeba_small/
-
+<img src='assets/processed_face_data.png' width=60% /><br />
 Final Project [Notebook](./dlnd_face_generation.ipynb)
 
 
