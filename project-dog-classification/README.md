@@ -7,7 +7,7 @@
 
 ## Dog breed classification using CNN
 
-Along with exploring state-of-the-art CNN models for classification and localization, we will make important design decisions about the user experience for your app.  Our goal is that by completing this lab, you understand the challenges involved in piecing together a series of models designed to perform various tasks in a data processing pipeline.  Each model has its strengths and weaknesses, and engineering a real-world application often involves solving many problems without a perfect answer. 
+Along with exploring state-of-the-art CNN models for classification and localization, we will make important design decisions about the user experience for your app.  Our goal is that by completing this project, you understand the challenges involved in piecing together a series of models designed to perform various tasks in a data processing pipeline.  Each model has its strengths and weaknesses, and engineering a real-world application often involves solving many problems without a perfect answer. 
 
 ![Sample Output][image1]
 
