@@ -2,9 +2,9 @@
 
 In this repository, you can overview different projects of udacity nanodegree program in deep learning. <br/>
 The projects covered are as follows : <br/>
-1.Dog breed classifier using convolutional neural networks (CNN )<br/>
-2.Fake face generation using generative adversial networks (GAN).<br/>
-3.Deployment of model using Amazon's SageMaker service <br/>
+1.[Dog breed classifier using convolutional neural networks (CNN )](./project-dog-breed-classifier)<br/>
+2.[Fake face generation using generative adversial networks (GAN)](./project-face-generation)<br/>
+3.[Deployment of deep learning model using Amazon's SageMaker service](./sagemaker-deployment)<br/>
 
 ## 1. Installation
 Download Anaconda
