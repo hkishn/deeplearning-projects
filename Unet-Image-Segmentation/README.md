@@ -15,10 +15,13 @@ The expansion increases the “what” which helps in getting more features but 
 The cropping is necessary due to the loss of border pixels in every convolution. At the final layer, a 1x1 convolution is used to map each 64-components feature vector to the desired number of classes. In this case, it is 2 as the output feature map has 2 classes; cells and membrane.  
 
 **The main contribution of this paper**  
-**a. Overlap- tile strategy** 
+**a. Overlap- tile strategy**  
+![overlap](https://user-images.githubusercontent.com/3446444/85615794-6382c000-b67a-11ea-8efa-8bb02acffeb7.png)
 Prediction of the segmentation in the yellow area requires image data within the blue area as input. missing input data is extrapolated by mirroring, this is used to predict pixels in the border region of the image.  
 **b. Data augmentation by applying elastic deformations to training images.** 
 This allows the network to learn invariance to such deformations, without the need to see these transformations in the annotated image corpus. This is important in biomedical segmentation since deformation is the most common variation in tissue and realistic deformations can be simulated efficiently.  
 **c. Separation of touching objects of the same class.**  
 This is done using a weighted loss, where the separating background labels between touching cells obtain a large weight in the loss function. This force the network to learn the small separation borders between touching cells.
 
+**Real World application**  
+Thousands of training images are beyond reach in biomedical tasks and require experts and take lots of time to annotate. This could automate the process thus lowering the cost and time it takes to annotate.  
