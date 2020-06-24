@@ -11,5 +11,13 @@ The u-net comprises of two parts an encoder/contraction path(left side) and a de
 Contraction path consists of a repeated application of a 3x3 convolutions(unpadded) each followed by a ReLU and a 2x2 max pooling operation with stride 2 for downsampling. At each downsampling step, we double the number of feature channels. This captures context via a compact feature map.  
 The expansion path consists of upsampling of the feature map followed by a 2x2 convolution(“up-convolution”) that halves the number of feature channels a concatenation with the cropped feature map from the contracting path, and a 3x3 convolutions, followed by a ReLU. The upsampling of the feature dimension is done to meet the same size as the block to be concatenated on the left.  
 The expansion increases the “what” which helps in getting more features but losses the localization, localization information is concatenated from the contraction path.
-The cropping is necessary due to the loss of border pixels in every convolution. At the final layer, a 1x1 convolution is used to map each 64-components feature vector to the desired number of classes. In this case, it is 2 as the output feature map has 2 classes; cells and membrane.
+The cropping is necessary due to the loss of border pixels in every convolution. At the final layer, a 1x1 convolution is used to map each 64-components feature vector to the desired number of classes. In this case, it is 2 as the output feature map has 2 classes; cells and membrane.  
+
+**The main contribution of this paper**  
+**a. Overlap- tile strategy** 
+Prediction of the segmentation in the yellow area requires image data within the blue area as input. missing input data is extrapolated by mirroring, this is used to predict pixels in the border region of the image.
+**b. Data augmentation by applying elastic deformations to training images.** 
+This allows the network to learn invariance to such deformations, without the need to see these transformations in the annotated image corpus. This is important in biomedical segmentation since deformation is the most common variation in tissue and realistic deformations can be simulated efficiently.
+**c. Separation of touching objects of the same class.**
+This is done using a weighted loss, where the separating background labels between touching cells obtain a large weight in the loss function. This force the network to learn the small separation borders between touching cells.
 
