@@ -15,9 +15,9 @@ The cropping is necessary due to the loss of border pixels in every convolution.
 
 **The main contribution of this paper**  
 **a. Overlap- tile strategy** 
-Prediction of the segmentation in the yellow area requires image data within the blue area as input. missing input data is extrapolated by mirroring, this is used to predict pixels in the border region of the image.
+Prediction of the segmentation in the yellow area requires image data within the blue area as input. missing input data is extrapolated by mirroring, this is used to predict pixels in the border region of the image.  
 **b. Data augmentation by applying elastic deformations to training images.** 
-This allows the network to learn invariance to such deformations, without the need to see these transformations in the annotated image corpus. This is important in biomedical segmentation since deformation is the most common variation in tissue and realistic deformations can be simulated efficiently.
-**c. Separation of touching objects of the same class.**
+This allows the network to learn invariance to such deformations, without the need to see these transformations in the annotated image corpus. This is important in biomedical segmentation since deformation is the most common variation in tissue and realistic deformations can be simulated efficiently.  
+**c. Separation of touching objects of the same class.**  
 This is done using a weighted loss, where the separating background labels between touching cells obtain a large weight in the loss function. This force the network to learn the small separation borders between touching cells.
 
