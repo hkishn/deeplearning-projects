@@ -7,6 +7,7 @@ The typical use of convolutional networks is on classification tasks, where the 
 The U-Net architecture is built upon the Fully Convolutional Network and modified in a way that it yields better segmentation in medical imaging. The paper use’s excessive data augmentation by applying elastic deformations to the available training images. This allows the network to learn invariance to such deformations, without the need to see these transformations in the annotated image corpus.  
 
 **Architecture**  
+![archictecture](https://user-images.githubusercontent.com/3446444/85615481-ebb49580-b679-11ea-88e3-3b3f1df86078.png)
 The u-net comprises of two parts an encoder/contraction path(left side) and a decoder/expansion path(right side).  
 Contraction path consists of a repeated application of a 3x3 convolutions(unpadded) each followed by a ReLU and a 2x2 max pooling operation with stride 2 for downsampling. At each downsampling step, we double the number of feature channels. This captures context via a compact feature map.  
 The expansion path consists of upsampling of the feature map followed by a 2x2 convolution(“up-convolution”) that halves the number of feature channels a concatenation with the cropped feature map from the contracting path, and a 3x3 convolutions, followed by a ReLU. The upsampling of the feature dimension is done to meet the same size as the block to be concatenated on the left.  
