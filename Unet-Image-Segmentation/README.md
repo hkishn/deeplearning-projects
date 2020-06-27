@@ -27,4 +27,6 @@ This is done using a weighted loss, where the separating background labels betwe
 Thousands of training images are beyond reach in biomedical tasks and require experts and take lots of time to annotate. This could automate the process thus lowering the cost and time it takes to annotate.  
 
 **Usage**  
+On running the [notebook](./Unet-Image-Segmentation/unet.ipynb) , you can compare the output image with input image.  
+e.g.
 ![unet-solution](https://user-images.githubusercontent.com/3446444/85920770-33166e00-b894-11ea-9723-cb04576be22f.jpg)
