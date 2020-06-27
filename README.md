@@ -5,6 +5,8 @@ The projects covered are as follows : <br/>
 1.[Dog breed classifier using convolutional neural networks (CNN )](./project-dog-classification)<br/>
 2.[Fake face generation using generative adversial networks (GAN)](./project-face-generation)<br/>
 3.[Deployment of deep learning model using Amazon's SageMaker service](./sagemaker-deployment)<br/>
+4.[Image segmentation using Unet architecture](./Unet-Image-Segmentation)<br/>
+
 
 ## 1. Installation
 Download Anaconda
